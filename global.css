@@ -1,0 +1,30 @@
+/* Global */
+html {overflow-y: scroll;}
+body {margin: 0; font-family: 'Roboto', sans-serif; color: #333;}
+h1, h2, h3 {font-weight: normal;}
+.clear {clear: both;}
+
+/* Header */
+#header {background-color: #2d2d2f; height: 75px;}
+#header img {height: 25px; display: block; margin: 25px; float: left;}
+#header h1 {line-height: 75px; float: left; color: #fff; margin: 0; font-size: 25px;}
+.link {color: #fff; text-decoration: none; float: right; line-height: 75px; margin-right: 25px;}
+.link:visited {color: #fff;}
+
+/* Wrapper */
+#wrapper {padding: 0 25px 25px 25px;}
+
+/* Form */
+input#urn {width: 500px; display: block; float: left; margin-right: 5px;}
+#search-button {display: block; float: left; margin-right: 5px;}
+#random-button {display: block; float: left;}
+
+/* Source image */
+img.source {display: block; height: 300px;}
+
+/* Thumbnails */
+div.thumb-container {float: left; height: 200px; position: relative; margin: 0 5px 5px 0;}
+div.year {position: absolute; top: 0; left: 0; font-size: 0.7em; background-color: #fff; padding: 3px 3px 3px 0;}
+div.year a, div.year a:visited {color: #333; text-decoration: none;}
+img.thumb {display: block; height: 200px; position: relative;}
+

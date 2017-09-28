@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Similar advertisement search</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="global.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="global.js"></script>
+</head>
+<body>
+    <div id="header">
+        <a href="http://lab.kb.nl/" target="_blank"><img src="http://lab.kb.nl/sites/all/themes/kblab/logo.png"></a>
+        <h1>SIAMESE</h1>
+        <a class="link" href="#" target="_blank">GitHub</a>
+        <a class="link" href="#" target="_blank">About</a>
+        <a class="link" href="#" target="_blank">Help</a>
+        <div class="clear"></div>
+    </div>
+
+    <div id="wrapper">
+        <h2>Similar Advertisement Search</h2>
+        <p>
+        SIAMESE allows users to search for similar images in three ways:
+        <ul> 
+            <li>Paste a Delpher URL for an advertisement from Algemeen Handelsblad (1945-1969) or NRC Handelsblad (1970-1995) into the search box</li>
+            <li>Click on one of the images to use it as a source image</li>
+            <li>Click on ‘random’ for a random source image</li>
+        </ul>
+        Click on year to navigate to Delpher.
+        </p>
+        <form method="get" target="">
+            <input id="urn" type="text" name="urn" value="">
+            <input id="search-button" type="submit" value="Search">
+            <input id="random-button" type="button" value="Random" onclick="location.href='/siamese/';">
+            <div class="clear"></div>
+        </form>
+
+        <h2>Source image</h2>
+        <div id="source"></div>
+
+        <h2>Top ten nearest neighbors</h2>
+        <div id="50"></div>
+        <div class="clear"></div>
+
+        <h2>Nearest neighbor per year</h2>
+        <div id="1"></div>
+        <div class="clear"></div>
+
+        <h2>Random images</h2>
+        <div id="random"></div>
+        <div class="clear"></div>
+    </div>
+
+</body>
+</html>
+
