@@ -2,10 +2,10 @@
 Siamese is a search interface for newspaper advertisements based on image similarity. It returns a set of nearest neighbors for a query image grouped by time period, which can be set at various lengths. It includes a graphical interface that presents the top 10 nearest neighbors along with a timeline of nearest neighbors for each year in the dataset.
 
 ## Background
-Siamese was created during the KB Researcher-in-Residenceship of Melvin Wevers (UU) to explore a set of 426,777 high resolution images of historical newspaper advertisements from two Dutch national newspapers: Algemeen Handelsblad (1945-1969) and NRC Handelsblad (1970-1994). Vector representations of the original images were obtained from the next-to-last layer of the [Tensorflow Inception image classifier] (https://github.com/tensorflow/models/blob/master/tutorials/image/imagenet/classify_image.py) containing a 2048 float description of the image. A set of thumnails scaling down the images to a maximum height of 300 pixels was generated to speed up access over the web. 
+Siamese was created during the KB Researcher-in-Residenceship of Melvin Wevers (UU) to explore a set of 426,777 high resolution images of historical newspaper advertisements from two Dutch national newspapers: Algemeen Handelsblad (1945-1969) and NRC Handelsblad (1970-1994). Vector representations of the original images were obtained from the next-to-last layer of the [Tensorflow Inception image classifier](https://github.com/tensorflow/models/blob/master/tutorials/image/imagenet/classify_image.py) containing a 2048 float description of the image. A set of thumnails scaling down the images to a maximum height of 300 pixels was generated to speed up access over the web. 
 
 ## Usage
-The image vector representations were indexed for approximate nearest neighbor search with [Annoy] (https://github.com/spotify/annoy), with the option of creating indices for a number of different time scales. Given the [availability of appropriately structured data] (http://lab.kb.nl/dataset/siameset), indices for e.g. each year and decade can be built with:
+The image vector representations were indexed for approximate nearest neighbor search with [Annoy](https://github.com/spotify/annoy), with the option of creating indices for a number of different time scales. Given the [availability of appropriately structured data](http://lab.kb.nl/dataset/siameset), indices for e.g. each year and decade can be built with:
 
 ```python
 import annoy_indexer
