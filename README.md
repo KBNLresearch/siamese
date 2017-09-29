@@ -16,7 +16,7 @@ indexer.build(n_trees=100, step_sizes=[10, 1])
 
 These can now be queried with an identifier for a specific image from the set. To retrieve, for example, the 5 nearest neighbors for each decade:
 
-```pyhton
+```python
 indexer.load(step_sizes=[10])
 indexer.query_all('KBNRC01:000028496:mpeg21:a0065', n_nns=[5])
 ```
