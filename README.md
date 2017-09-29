@@ -30,7 +30,7 @@ Running `annoy_web.py` starts a Bottle web application that accepts parameters:
 - `vectors` whether or not the vectors of the images should be included in the response
 
 ## Online demo
-- An online demo of the Siamese graphical interface is available at http://kbresearch.nl/siamese/
+- An online demo of the Siamese graphical interface is available at http://kbresearch.nl/siamese
 - The web API can be accessed at http://kbresearch.nl/annoy/query
 
 ## More information
